@@ -1,0 +1,307 @@
+*{
+    margin: 0%;
+    padding: 0;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+body{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.floating-bar{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 2px;
+    justify-content: space-evenly;
+    z-index: 2;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
+}
+.floating-bar i{
+    padding: 16px 18px;
+    align-self: flex-end;
+}
+.drop-down-menu{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 7px rgb(132, 132, 132);
+    background-color: white;
+}
+.drop-down-menu a{
+    
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+.drop-down-menu a:hover{
+    background-color: #cacaca;
+}
+.nav-bar{
+    background-color: white;
+    box-shadow: 0 0 7px rgb(132, 132, 132);
+    padding: 16px 18px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+.right-menu{
+    float: right;
+    margin-right: 40px;
+}
+.nav-bar a{
+    letter-spacing: 4px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+.nav-bar a:hover{
+    background-color: #cacaca;
+}
+#home{
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+}
+.home-text{
+    position: absolute;
+    left: 0;
+    top: 48%;
+    width: 100%;
+    text-align: center;
+}
+#home span{
+    font-size: 36px;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+#home span b{
+    background-color: rgba(0, 0, 0, 0.749);
+    padding: 8px 16px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.87);
+    margin-right: 8px;
+}
+#home::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Main Container */
+.main-container{
+    padding: 10px 22px;
+    max-width: 1500px;
+    margin: auto;
+    /* border: 2px solid crimson; */
+}
+/* Project section */
+.row-1 #projects{
+    padding: 32px 12px;
+}
+.row-1 #projects h3{
+    display: inline-block;
+    margin: 14px 0 6px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.project-img{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.project-img-col{
+    padding: 0 8px;
+    /* display: inline-block; */
+    margin-bottom: 16px;
+}
+.project-img-col-disp{
+    position: relative;
+}
+.project-img-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 16px;
+    /* display: inline-block; */
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+.row-1::after, #projects::after, .project-img::after, .project-img-col::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* About Section */
+.row-2 #about{
+    padding: 32px 12px;
+}
+.row-2 #about h3{
+    display: inline-block;
+    margin: 14px 0 6px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.row-2 #about p{
+    margin: 16px 0;
+    text-align: justify;
+}
+.card{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.card-col{
+    padding: 0 8px;
+    /* display: inline-block; */
+    margin-bottom: 20px;
+}
+.card-col-h3 h3{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-opacity{
+    margin: 15px 0;
+    opacity: 0.6;
+}
+.card-col-p2{
+    margin: 15px 0;
+}
+.btn{
+    width: 100%;
+}
+.btn button{
+    padding: 11px 16px;
+    background-color: #f1f1f1;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn button:hover{
+    background-color: #cacaca;
+}
+.row-3{
+    margin-bottom: 32px;
+}
+.row-3 #contact{
+    padding: 32px 12px 5px 12px;
+}
+.row-3 #contact h3{
+    display: inline-block;
+    margin: 14px 0 6px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.row-3 #contact p{
+    margin: 16px 0;
+}
+.row-3 #contact::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.contact-form{
+    padding: 5px 12px 10px 12px;
+}
+.contact-form .name{
+    width: 100%;
+    border-radius: 3px;
+    padding: 6px 0;
+}
+.email, .subject, .comment{
+    width: 100%;
+    border-radius: 3px;
+    margin: 16px 0;
+}
+/* .contact-form .name:hover, .email:hover, .subject:hover, .comment:hover{
+    border: 1px solid black;
+} */
+.name #name, #email, #subject, #comment{
+    /* border: none; */
+    border: 1px solid #cacaca;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 8px;
+    display: block;
+    box-sizing: border-box;
+    align-self: stretch;
+    padding: 8px;
+}
+.btn-2{
+    padding: 10px 16px;
+    margin: 16px 0;
+    width: 170px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border: none; 
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: rgba(0, 0, 0, 0.793);
+}
+.footer{
+    padding: 16px 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.footer p{
+    margin: 15px 0
+}
+.footer p a{
+    color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+    .card, .project-img{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .right-menu a {
+      display: none;
+    }
+    
+    .card, .project-img{
+        grid-template-columns: 1fr;
+    }
+    #hidden{
+        display: none;
+    }
+    .floating-bar{
+        display: flex;
+    }
+    .floating-bar:hover .drop-down-menu{
+        display: flex;
+    }
+}
